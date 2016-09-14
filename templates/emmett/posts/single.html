@@ -1,0 +1,23 @@
+{{#> layout}}
+  {{> header}}
+  <section>
+    <h2>{{current.title}}</h2>
+    <p>By: {{current.author}} | {{dateFromNow current.date site.language}}</p>
+    {{{current.content}}}
+    <footer>
+      <h3>Categories</h3>
+      <ul>
+        {{#each current.categories}}
+          <li><a href="#">{{this}}</a></li>
+        {{/each}}
+      </ul>
+      <h3>Tags</h3>
+      <ul>
+        {{#each current.tags}}
+          <li><a href="#">{{this}}</a></li>
+        {{/each}}
+      </ul>
+    </footer>
+  </section>
+  {{> footer}}
+{{/layout}}
