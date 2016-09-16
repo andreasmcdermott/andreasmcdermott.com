@@ -1,0 +1,81 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font: 1em Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fefefe;
+}
+a {
+  color: #099eff;
+  text-decoration: none;
+}
+a:hover {
+  color: #51b9fd;
+}
+.page {
+  width: 960px;
+  margin: 0 auto;
+  background: #fff;
+}
+.page__header {
+  border-bottom: 4px solid #ff4100;
+  position: relative;
+}
+.page__title {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 3em;
+  line-height: 3rem;
+  color: #222;
+}
+.page__nav {
+  font-size: 2rem;
+  line-height: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.page__content {
+  padding: 1em;
+}
+.page__footer {
+  padding: 1em 0;
+  border-top: 2px solid #ff4100;
+}
+.post-item__title {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.u-nolist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.u-nolist__item {
+  display: block;
+}
+.u-nolist--horizontal .u-nolist__item {
+  display: inline-block;
+}
+.u-float-left {
+  float: left;
+}
+.u-float-right {
+  float: right;
+}
+.u-clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.u-small-text {
+  font-size: 0.85em;
+}

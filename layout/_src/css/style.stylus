@@ -1,0 +1,101 @@
+$fonts = Arial, Helvetica, sans-serif 
+
+$blue = #099EFF
+$light-blue = #51B9FD
+$dark-blue = #005F9D
+$red = #FF4100
+$bkgd = #FEFEFE
+$black = #222 
+$white = #FFF
+
+html, body
+  width 100%
+  height 100%
+  padding 0
+  margin 0
+  font 1em $fonts
+  color $black
+  background $bkgd
+
+a
+  color $blue
+  text-decoration none
+
+  &:hover
+    color $light-blue
+
+///
+/// Page
+///
+
+.page
+  width 960px
+  margin 0 auto
+  background $white
+
+.page__header
+  border-bottom 4px solid $red
+  position relative
+
+.page__title
+  padding 0
+  margin 0
+  display inline-block
+  font-size 3em
+  line-height 3rem
+  color $black
+
+.page__nav &
+  font-size 2rem
+  line-height 2rem
+  position absolute
+  bottom 0
+  right 0
+
+.page__content
+  padding 1em
+
+.page__footer
+  padding 1em 0
+  border-top 2px solid $red
+
+// Posts
+
+.post-item__title
+  display inline-block
+  padding 0
+  margin 0
+
+///
+/// Utilities
+///
+
+// Lists
+
+.u-nolist
+  list-style-type none
+  padding 0
+  margin 0
+
+.u-nolist__item
+  display block
+
+  .u-nolist--horizontal &
+    display inline-block
+
+.u-float-left
+  float left
+
+.u-float-right
+  float right
+
+.u-clearfix:after
+	visibility hidden
+	display block
+	font-size 0
+	content " "
+	clear both
+	height 0
+
+.u-small-text
+  font-size 0.85em
