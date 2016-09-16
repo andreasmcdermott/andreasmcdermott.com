@@ -1,4 +1,6 @@
 $fonts = Arial, Helvetica, sans-serif 
+$font-size = 1em
+$page-width = 960px
 
 $blue = #099EFF
 $light-blue = #51B9FD
@@ -13,7 +15,7 @@ html, body
   height 100%
   padding 0
   margin 0
-  font 1em $fonts
+  font $font-size $fonts
   color $black
   background $bkgd
 
@@ -29,7 +31,7 @@ a
 ///
 
 .page
-  width 960px
+  width $page-width
   margin 0 auto
   background $white
 
